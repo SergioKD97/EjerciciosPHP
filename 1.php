@@ -98,7 +98,7 @@ PACO;
         
         
         /////////////////////////10
-        echo"<p>ejercicio10<br>";         
+        echo"<p>ejercicio10<br>";
         
         $directorio = opendir("../"); //ruta actual
         while ($archivo = readdir($directorio)){ //obtenemos un archivo y luego otro sucesivamente
@@ -106,6 +106,11 @@ PACO;
         }
 
 
+        /////////////////////////11
+        echo"<p>ejercicio11<br>";
+        foreach($_SERVER as $nombre_campo => $valor){
+            $asignacion = "$" . $nombre_campo . "= . $valor . ";   echo "<br>" . $asignacion;
+        }
         
         
         
